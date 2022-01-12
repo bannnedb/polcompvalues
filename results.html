@@ -36,15 +36,15 @@
             background.onload = function() {
                 var c = document.createElement("canvas");
                 c.width = 1800;
-                c.height = 1550;
+                c.height = 1600;
                 var ctx = c.getContext("2d");
                 ctx.fillStyle = "#EEEEEE"
-                ctx.fillRect(0, 0, 1850, 1600);
+                ctx.fillRect(0, 0, 1800, 1600);
                 ctx.drawImage(background, 0, 0);
     
                 var dot = c.getContext("2d");
                 dot.beginPath();
-                dot.arc(200 + (1412 * (x_axis+10)/20), 1150 - (1012 * (y_axis + 10)/20), 25, 0, 2 * Math.PI);
+                dot.arc(100 + (1412 * (x_axis+10)/20), 1150 - (1012 * (y_axis + 10)/20), 25, 0, 2 * Math.PI);
                 dot.fillStyle = 'red';
                 dot.fill();
                 dot.stroke();
