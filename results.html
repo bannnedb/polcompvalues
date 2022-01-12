@@ -36,7 +36,7 @@
             background.onload = function() {
                 var c = document.createElement("canvas");
                 c.width = 1800;
-                c.height = 1600;
+                c.height = 2025;
                 var ctx = c.getContext("2d");
                 ctx.fillStyle = "#EEEEEE"
                 ctx.fillRect(0, 0, 1800, 1600);
@@ -52,11 +52,11 @@
                 ctx.font="50px Montserrat"
                 ctx.textAlign="center"
                 ctx.fillStyle="#222222"
-                ctx.fillText("Left / Right Axis (x): " + x_axis, 725, 1375)
-                ctx.fillText("Auth / Lib Axis (y): " + y_axis, 725, 1450)
+                ctx.fillText("Left / Right Axis (x): " + x_axis, 725, 1800)
+                ctx.fillText("Auth / Lib Axis (y): " + y_axis, 725, 1875)
                 ctx.textAlign="right"
                 ctx.font="60px Montserrat"
-                ctx.fillText("bannnedb.github.io/polcompvalues/", 1820, 1560)
+                ctx.fillText("bannnedb.github.io/polcompvalues/", 1820, 1915)
     
                 document.getElementById("banner").src = c.toDataURL();
             }
